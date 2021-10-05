@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_cast_for_education_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_house_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_qr_code_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_slow_motion_video_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_wifi_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_baseline_work_outline_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_cat1_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_outline_camera_alt_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_outline_edit_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/drawable/ic_outline_insert_photo_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/mipmap-anydpi-v26/ic_cat1.xml" value="0.2703125" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/mipmap-anydpi-v26/ic_cat4.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/maria/AndroidProjects/AndroidLab/app/src/main/res/mipmap-anydpi-v26/ic_cat4_round.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
