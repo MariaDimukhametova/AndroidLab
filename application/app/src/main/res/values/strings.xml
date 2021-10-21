@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">application</string>
+    <string name="btn_3">3</string>
+    <string name="btn_2">2</string>
+    <string name="btn_1">1</string>
+    <string name="str_first_fragment">first fragment</string>
+    <string name="str_second_fragment">second fragment</string>
+    <string name="str_third_fragment">third fragment</string>
+</resources>
