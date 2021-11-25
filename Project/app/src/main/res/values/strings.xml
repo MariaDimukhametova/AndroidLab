@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Project</string>
+    <string name="app_name">Motivational Alarm!</string>
+    <string name="notification_channel_title">Channel title</string>
+    <string name="notification_channel_description">Channel description</string>
+    <string name="tv_second_activity_description">
+        Доброе утро!\nПоздравляю с успешным пробуждением!\nПостарайтесь не умереть в этот прекрасный день!</string>
+    <string name="notification_channel_id">channel_id_1</string>
+    <string name="notification_content_title">"Просыпайся, солнышко!"</string>
+    <string name="notification_content_text">"Тебе пора совершать великие подвиги!"</string>
+    <string name="tv_set_time">Укажите время Вашего пробуждения:</string>
+    <string name="btn_set_time">Выбрать время</string>
+    <string name="btn_start">старт</string>
+    <string name="btn_stop">стоп</string>
+    <string name="time_picker_text">время</string>
+    <string name="save_success">Будильник прозвенит вовремя!</string>
+    <string name="set_error">Время еще не назначено!</string>
+    <string name="delete_alarm">Удалить будильник :(</string>
+    <string name="delete_alarm_question">Вы правда хотите удалить меня? :((</string>
+    <string name="ok">Дя</string>
+    <string name="no">Неть</string>
 </resources>

@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_set_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/tv_set_time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_motivation" />
+
+    <Button
+        android:id="@+id/btn_set_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="#e3cced"
+        android:text="@string/btn_set_time"
+        app:layout_constraintEnd_toEndOf="@+id/tv_set_time"
+        app:layout_constraintStart_toStartOf="@+id/tv_set_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set_time" />
+
+    <ImageView
+        android:id="@+id/iv_motivation"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_start"
+        android:background="#a8d8ff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop"
+        app:layout_constraintStart_toStartOf="@id/btn_set_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop"
+        android:background="#a8d8ff"
+        app:layout_constraintEnd_toEndOf="@id/btn_set_time"
+        app:layout_constraintStart_toEndOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="2dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
