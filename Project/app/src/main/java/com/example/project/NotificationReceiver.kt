@@ -34,9 +34,7 @@ class NotificationReceiver : BroadcastReceiver(){
                         .setSound(Uri.parse("android.resource://" + p0.packageName + "/" + R.raw.alarm))
                         .setVibrate(vibPattern)
                 }
-                if (p0 != null) notification?.let { empty ->
-                    NotificationManagerCompat.from(p0).notify(1, empty.build())
-                }
+                if (p0 != null) notification?.let { empty -> NotificationManagerCompat.from(p0).notify(1, empty.build()) }
             }
         }
     }

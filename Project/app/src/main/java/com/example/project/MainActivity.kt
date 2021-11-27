@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.project.databinding.ActivityMainBinding
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat.CLOCK_24H
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 .setTitleText(R.string.time_picker_text)
                 .build()
 
-            with(picker) {
+            picker.run {
                 show(supportFragmentManager, "Будильник")
                 addOnPositiveButtonClickListener {
                     calendar = Calendar.getInstance().also {
