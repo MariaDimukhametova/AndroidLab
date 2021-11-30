@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.project.databinding.ActivityMainBinding
-import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat.CLOCK_24H
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         service = NotificationService(this).also {
-            it.showNotification(this)
+            it.createNotificationChannel(this)
         }
 
         fun showTimePicker() {

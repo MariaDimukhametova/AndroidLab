@@ -12,8 +12,8 @@ import androidx.core.app.NotificationManagerCompat
 class NotificationReceiver : BroadcastReceiver(){
     private val vibPattern = longArrayOf(0, 2000, 0, 400)
 
-    override fun onReceive(p0: Context?, p1: Intent?) {
-        p1?.let {
+    override fun onReceive(p0: Context, p1: Intent) {
+        p1.let {
             if (it.action == "com.test.notification_manager") {
                 val intent = Intent(p0, SecondActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -23,7 +23,7 @@ class NotificationReceiver : BroadcastReceiver(){
                     intent,
                     PendingIntent.FLAG_UPDATE_CURRENT
                 )
-                val notification = p0?.let { cont ->
+                val notification = p0.let { cont ->
                     NotificationCompat.Builder(cont, p0.getString(R.string.notification_channel_id))
                         .setSmallIcon(R.drawable.ic_launcher_background)
                         .setContentTitle(p0.getString(R.string.notification_content_title))
@@ -36,7 +36,8 @@ class NotificationReceiver : BroadcastReceiver(){
                         .setSound(Uri.parse("android.resource://" + p0.packageName + "/" + R.raw.alarm))
                         .setVibrate(vibPattern)
                 }
-                if (p0 != null) notification?.let { empty -> NotificationManagerCompat.from(p0).notify(1, empty.build()) }
+                p0.wakeUpScreen()
+                notification.let { empty -> NotificationManagerCompat.from(p0).notify(1, empty.build()) }
             }
         }
     }
