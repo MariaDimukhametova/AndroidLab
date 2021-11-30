@@ -29,7 +29,7 @@ class NotificationService (context: Context){
                 context.getString(R.string.notification_channel_title),
                 IMPORTANCE_DEFAULT
             )
-            with(channel) {
+            channel.run {
                 vibrationPattern = vibPattern
                 setSound(Uri.parse("android.resource://" + context.packageName + "/" + R.raw.alarm), audio)
                 description = context.getString(R.string.notification_channel_description)

@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.project">
 
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,13 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
 
-        <receiver android:name=".NotificationReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.test.notification_manager" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,9 +23,16 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".NotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.test.notification_manager" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".SecondActivity"
-            android:exported="true" />
-
+            android:exported="false" />
     </application>
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.project
 
+import android.app.Notification
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,7 +10,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
 class NotificationReceiver : BroadcastReceiver(){
-    private val vibPattern = arrayOf(100L, 200L, 0, 400L).toLongArray()
+    private val vibPattern = longArrayOf(0, 2000, 0, 400)
 
     override fun onReceive(p0: Context?, p1: Intent?) {
         p1?.let {
@@ -31,6 +32,7 @@ class NotificationReceiver : BroadcastReceiver(){
                         .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                         .setPriority(NotificationCompat.PRIORITY_HIGH)
                         .setContentIntent(pendingIntent)
+                        .setDefaults(Notification.DEFAULT_SOUND or Notification.DEFAULT_VIBRATE)
                         .setSound(Uri.parse("android.resource://" + p0.packageName + "/" + R.raw.alarm))
                         .setVibrate(vibPattern)
                 }
